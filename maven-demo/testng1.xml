@@ -1,0 +1,22 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="KeyStone" verbose="1" annotations="JDK" parallel="tests" >
+         
+  <test name="ServerCount">
+	 <classes>
+	   <class name="test.ServerListing"/>
+	 </classes>
+   </test>
+   
+  <test name="FilterTest">
+     <classes>
+       <class name="test.FilterTest"/>
+     </classes>
+   </test>
+   
+   <test name="JiraListTest">
+     <classes>
+       <class name="test.JiraListing"/>
+     </classes>
+   </test>
+</suite>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [KeyStone]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="ServerCount(failed)">
+    <classes>
+      <class name="test.ServerListing">
+        <methods>
+          <include name="paginatorTest"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- test.ServerListing -->
+    </classes>
+  </test> <!-- ServerCount(failed) -->
+  <test thread-count="5" parallel="tests" name="JiraListTest(failed)">
+    <classes>
+      <class name="test.JiraListing">
+        <methods>
+          <include name="setup"/>
+          <include name="paginatorTest"/>
+          <include name="toolTipTest"/>
+          <include name="listCountTest"/>
+        </methods>
+      </class> <!-- test.JiraListing -->
+    </classes>
+  </test> <!-- JiraListTest(failed) -->
+  <test thread-count="5" parallel="tests" name="FilterTest(failed)">
+    <classes>
+      <class name="test.FilterTest">
+        <methods>
+          <include name="tagsfilterTest"/>
+          <include name="MoreFiltersTest"/>
+          <include name="setup"/>
+          <include name="projectfilterTest"/>
+          <include name="regionfilterTest"/>
+        </methods>
+      </class> <!-- test.FilterTest -->
+    </classes>
+  </test> <!-- FilterTest(failed) -->
+</suite> <!-- Failed suite [KeyStone] -->
